@@ -1,11 +1,18 @@
 Package: assignmentb2.graphHistograms
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Plot histograms and calculate distribution means
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Alexandra", "Millett", , "amillett@student.ubc.ca", role = c("aut", "cre"))
+Description: This package is used for plotting histograms and calculating distribution means. This is usable for dataframes that have numerical variables, and allows for quick data overviews.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Imports: 
+    magrittr,
+    ggplot2,
+    dplyr
+Suggests: 
+    testthat (>= 3.0.0),
+    rlang
+Config/testthat/edition: 3
