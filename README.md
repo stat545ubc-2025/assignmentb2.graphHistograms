@@ -1,1 +1,77 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/315-s1UC)
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# assignmentb2.graphHistograms
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of assignmentb2.graphHistograms is to provide users with an
+efficient way of graphing histograms when doing data exploration, to
+speed up the process of a common practice done when understanding what
+the data in a dataset looks like. A common use is when you are wanting
+to understand the distribution and patterns of a variable in a dataset,
+to determine what type of distribution, what trends are present, and
+whether this fits a question you have in mind. The specific use of this
+package is to plot a histogram of a numerical variable in the dataset of
+choosing, and label it’s mean value on the plot. It also outputs what
+the mean is so that this can be documented instead of relying on the
+graph.
+
+## Installation
+
+You can install the development version of assignmentb2.graphHistograms
+from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "0.1.0")
+```
+
+## Examples
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(assignmentb2.graphHistograms)
+plot_distribution_and_mean(mtcars, mpg, 10, 4)
+#> $plot
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />
+
+    #> 
+    #> $mean_var
+    #> [1] "The mean of mpg is 20.0906"
+
+``` r
+plot_distribution_and_mean(mtcars, wt)
+#> $plot
+```
+
+<img src="man/figures/README-example_2-1.png" width="100%" />
+
+    #> 
+    #> $mean_var
+    #> [1] "The mean of wt is 3.217"
+
+## Dependencies
+
+This package requires certain dependencies, which are loaded upon
+download. For reference, the packages are listed below:
+
+``` r
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+library(ggplot2)
+library(magrittr)
+library(assignmentb2.graphHistograms) # this package!
+```
