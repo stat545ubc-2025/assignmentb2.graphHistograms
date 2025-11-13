@@ -10,12 +10,15 @@
 #'
 #' @param dataframe any dataframe that has at least one numerical variable. The param name 'dataframe' is used to make it clear that the input must be a dataframe, not a vector.
 #' @param num_variable any numerical variable in the dataframe that the user wants to plot. The param name 'num_variable' demonstrates that the input should be a numeric variable, though there is a if statement that does check for this.
-#' @param bin_number the number of bins the user wants to assign that works best for the distribution of the variable. This must be a positive integer greater than 0. The param name 'bin_number' is used to ensure that that it is clear that the input for this variable is a number of bins. A default is set to 30 as this is the default number of bins set by ggplot geom_hist().
+#' @param bin_number the number of bins the user wants to assign that works best for the distribution of the variable. This must be a positive integer greater than 0. The param name 'bin_number' is used to ensure that that it is clear that the input for this variable is a number of bins. A default is set to 30 as this is the default number of bins set by ggplot geom_histogram().
 #' @param decimals the number of digits to round the mean value to in the output. The default is set to 3 digits (decimals). Must be a positive integer.
 #' @return the histogram plot (plot_data) and the mean value for the variable, outputted in a sentence
 #' ("The mean of <variable> is <mean value>"). The list is used so that the outputs are assigned as components.
 #' @import ggplot2
 #' @import dplyr
+#' @examples
+#' plot_distribution_and_mean(mtcars, wt, 10, 4)
+#' plot_distribution_and_mean(mtcars, mpg)
 #' @export
 plot_distribution_and_mean <- function(dataframe, num_variable, bin_number = 30, decimals = 3) { # function that takes in dataframe, variable from the dataframe, the number of bins, and decimal places for the mean of the variable. A default bin number is set to 30 (as per the ggplot geom_histogram usage), and the number of decimal places is set to a default of 3.
 
@@ -31,6 +34,10 @@ plot_distribution_and_mean <- function(dataframe, num_variable, bin_number = 30,
   # checks if the dataframe has at least one row (i.e. not zero rows)
   if(nrow(dataframe) == 0) { # if the dataframe has zero rows
     stop("dataframe must have at least 1 row") # show this error
+  }
+  # checks if the class of the dataframe is a dataframe or tibble
+  if(!(any(class(dataframe) %in% c("data.frame", "tbl_df", "tbl")))) { # if the dataframe class is not data.frame, tbl_df, or tbl
+    stop("dataframe must be one of class data.frame, tbl_df, tbl") # show this error
   }
 
   ### num_variable checks
