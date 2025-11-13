@@ -31,11 +31,13 @@ devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "
 
 ## Examples
 
-This is a basic example which shows you how to solve a common problem:
+This are two basic examples which show you how to solve a common
+problem:
 
 ``` r
+
 library(assignmentb2.graphHistograms)
-plot_distribution_and_mean(mtcars, mpg, 10, 4)
+plot_distribution_and_mean(mtcars, wt, 10, 4)
 #> $plot
 ```
 
@@ -43,10 +45,10 @@ plot_distribution_and_mean(mtcars, mpg, 10, 4)
 
     #> 
     #> $mean_var
-    #> [1] "The mean of mpg is 20.0906"
+    #> [1] "The mean of wt is 3.2172"
 
 ``` r
-plot_distribution_and_mean(mtcars, wt)
+plot_distribution_and_mean(mtcars, mpg)
 #> $plot
 ```
 
@@ -54,7 +56,7 @@ plot_distribution_and_mean(mtcars, wt)
 
     #> 
     #> $mean_var
-    #> [1] "The mean of wt is 3.217"
+    #> [1] "The mean of mpg is 20.091"
 
 ## Dependencies
 

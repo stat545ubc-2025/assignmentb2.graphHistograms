@@ -16,7 +16,7 @@ plot_distribution_and_mean(
 
 \item{num_variable}{any numerical variable in the dataframe that the user wants to plot. The param name 'num_variable' demonstrates that the input should be a numeric variable, though there is a if statement that does check for this.}
 
-\item{bin_number}{the number of bins the user wants to assign that works best for the distribution of the variable. This must be a positive integer greater than 0. The param name 'bin_number' is used to ensure that that it is clear that the input for this variable is a number of bins. A default is set to 30 as this is the default number of bins set by ggplot geom_hist().}
+\item{bin_number}{the number of bins the user wants to assign that works best for the distribution of the variable. This must be a positive integer greater than 0. The param name 'bin_number' is used to ensure that that it is clear that the input for this variable is a number of bins. A default is set to 30 as this is the default number of bins set by ggplot geom_histogram().}
 
 \item{decimals}{the number of digits to round the mean value to in the output. The default is set to 3 digits (decimals). Must be a positive integer.}
 }
@@ -30,4 +30,8 @@ inputs from a specific dataframe, and adjust the number of bins as necessary to 
 readable. A x-intercept line is added to show the user the mean value for the numerical variable based
 on the histogram distribution, and the mean value of the variable is outputted
 as a sentence along with the plot.
+}
+\examples{
+plot_distribution_and_mean(mtcars, wt, 10, 4)
+plot_distribution_and_mean(mtcars, mpg)
 }
