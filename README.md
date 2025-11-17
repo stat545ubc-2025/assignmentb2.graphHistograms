@@ -1,13 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# assignmentb2.graphHistograms
+# graphHistograms
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of assignmentb2.graphHistograms is to provide users with an
+The goal of `assignmentb2.graphHistograms` is to provide users with an
 efficient way of graphing histograms when doing data exploration, to
 speed up the process of understanding what the data in a dataset looks
 like. A common use is when you are wanting to understand what the
@@ -24,13 +24,13 @@ trying to answer.
 
 ## Installation
 
-You can install the development version of assignmentb2.graphHistograms
-from [GitHub](https://github.com/) with:
+You can install the development version of graphHistograms from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 library(devtools)
-devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "0.1.0")
+devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "1.0.0")
 ```
 
 ## Examples
