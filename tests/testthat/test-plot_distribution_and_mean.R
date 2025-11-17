@@ -1,3 +1,4 @@
+# Tests copied from assignment 1 tests
 # test dataset
 test_dataset <- data.frame(Student_ID = letters[1:20],
                                 Grade = c(90,70,70,75,80,NA,65,100,67,89,89,89,75,89,NA,100,100,89,89,NA))
