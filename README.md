@@ -7,6 +7,8 @@
 
 <!-- badges: end -->
 
+Author: Alexandra Millett
+
 The goal of `assignmentb2.graphHistograms` is to provide users with an
 efficient way of graphing histograms when doing data exploration, to
 speed up the process of understanding what the data in a dataset looks
