@@ -30,7 +30,7 @@ from [GitHub](https://github.com/) with:
 ``` r
 # install.packages("devtools")
 library(devtools)
-devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "1.0.0")
+devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms")
 ```
 
 ## Examples
