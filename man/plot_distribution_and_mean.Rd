@@ -25,7 +25,7 @@ the histogram plot (plot_data) and the mean value for the variable, outputted in
 ("The mean of \if{html}{\out{<variable>}} is \if{html}{\out{<mean value>}}"). The list is used so that the outputs are assigned as components.
 }
 \description{
-This purpose of this function is to construct a histogram based on a numerical variable that the user
+The purpose of this function is to construct a histogram based on a numerical variable that the user
 inputs from a specific dataframe, and adjust the number of bins as necessary to make the graph
 readable. A x-intercept line is added to show the user the mean value for the numerical variable based
 on the histogram distribution, and the mean value of the variable is outputted

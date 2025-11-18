@@ -1,6 +1,6 @@
 Package: assignmentb2.graphHistograms
 Title: Plot histograms and calculate distribution means
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person("Alexandra", "Millett", , "amillett@student.ubc.ca", role = c("aut", "cre"))
 Description: This package is used for plotting histograms and calculating distribution means. This is usable for dataframes that have numerical variables, and allows for quick data overviews.
