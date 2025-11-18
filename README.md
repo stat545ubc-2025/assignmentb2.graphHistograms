@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# graphHistograms
+# assignmentb2.graphHistograms
 
 <!-- badges: start -->
 
@@ -24,8 +24,8 @@ trying to answer.
 
 ## Installation
 
-You can install the development version of graphHistograms from
-[GitHub](https://github.com/) with:
+You can install the development version of assignmentb2.graphHistograms
+from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# graphHistograms
+# assignmentb2.graphHistograms
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -24,7 +24,7 @@ The specific use of this package is to plot a histogram of a numerical variable 
 
 ## Installation
 
-You can install the development version of graphHistograms from [GitHub](https://github.com/) with:
+You can install the development version of assignmentb2.graphHistograms from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
