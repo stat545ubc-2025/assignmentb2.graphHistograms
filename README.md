@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-The goal of assignmentb2.graphHistograms is to provide users with an
+The goal of `assignmentb2.graphHistograms` is to provide users with an
 efficient way of graphing histograms when doing data exploration, to
 speed up the process of understanding what the data in a dataset looks
 like. A common use is when you are wanting to understand what the
@@ -30,7 +30,7 @@ from [GitHub](https://github.com/) with:
 ``` r
 # install.packages("devtools")
 library(devtools)
-devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "0.1.0")
+devtools::install_github("stat545ubc-2025/assignmentb2.graphHistograms", ref = "1.0.0")
 ```
 
 ## Examples
